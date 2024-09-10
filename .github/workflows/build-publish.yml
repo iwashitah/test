@@ -10,4 +10,5 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: Run curl
-         run: curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL"
+         run: |
+           curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL"
