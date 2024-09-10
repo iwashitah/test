@@ -1,3 +1,10 @@
+name: "TEST"
+on: push
+
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   job:
     environment: Production
