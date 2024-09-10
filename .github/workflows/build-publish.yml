@@ -12,5 +12,5 @@ jobs:
        - name: Run curl
          run: |
            env
-           echo "::add-mask::${{ ACTIONS_ID_TOKEN_REQUEST_TOKEN }}"
+           echo "::add-mask::${{ env.ACTIONS_ID_TOKEN_REQUEST_TOKEN }}"
 
